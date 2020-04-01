@@ -396,8 +396,8 @@ constexpr auto solve(T maze)
 
 int main()
 {
-  constexpr const std::size_t num_cols = 100;
-  constexpr const std::size_t num_rows = 90;
+  constexpr const std::size_t num_cols = 60;
+  constexpr const std::size_t num_rows = 20;
 
   constexpr auto maze = make_maze<num_cols, num_rows>();
   constexpr auto rendered_maze = solve(render_maze(maze));
